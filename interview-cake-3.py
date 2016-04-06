@@ -8,6 +8,9 @@
 
 def get_highest_product_of_three(lst):
 
+    if len(lst) < 3:
+        raise  Exception('The list has to have at least 3 items.')
+
     highest = max(lst[0], lst[1])
 
     lowest = min(lst[0], lst[1])
